@@ -16,3 +16,7 @@ Day 2
 在windows下载了https://download.csdn.net/download/qq1084502122/10734836
 
 转换后依然失败，下一步在linux服务器上尝试（更大的内存）
+
+尝试通过以下方法在ubuntu上下载存在百度云里的数据集
+
+https://blog.csdn.net/feifanhanmc/article/details/82819425
