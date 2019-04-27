@@ -15,4 +15,4 @@ Day 2
 
 在windows下载了https://download.csdn.net/download/qq1084502122/10734836
 
-转换后依然失败，下一步在linux上尝试
+转换后依然失败，下一步在linux服务器上尝试（更大的内存）
