@@ -28,7 +28,7 @@ df_test=reader_pandas('./test_set.csv')
 df_train.drop(columns=['article','id'],inplace=True)
 df_test.drop(columns=['article'],inplace=True)
 toc=time.time()
-print("读入完毕，耗时"+str(1000*(toc-tic))+"ms")
+print("读入完毕，耗时"+str(toc-tic)+"s")
 
 print("开始进行数据预处理")
 tic=time.time()
@@ -38,20 +38,20 @@ x_train=vectorizer.transform(df_train['word_seg'])
 x_test=vectorizer.transform(df_test['word_seg'])
 y_train=df_train['class']-1
 toc=time.time()
-print("数据预处理完毕，耗时"+str(1000*(toc-tic))+"ms")
+print("数据预处理完毕，耗时"+str(toc-tic)+"s")
 
 print("开始训练")
 tic=time.time()
 lg=LogisticRegression(C=4,dual=True)
 lg.fit(x_train,y_train)
 toc=time.time()
-print("训练完毕，耗时"+str(1000*(toc-tic))+"ms")
+print("训练完毕，耗时"+str(toc-tic)+"s")
 
 print("开始生成预测数据")
 tic=time.time()
 y_test=lg.predict(x_test)
 toc=time.time()
-print("预测数据生成完毕，耗时"+str(1000*(toc-tic))+"ms")
+print("预测数据生成完毕，耗时"+str(toc-tic)+"s")
 
 print("开始保存结果到本地")
 tic=time.time()
@@ -60,7 +60,7 @@ df_test['class']=df_test['class']+1
 df_result=df_test.loc[:,['id','class']]
 df_result.to_csv('./result.csv',index=False)
 toc=time.time()
-print("结果保存完毕，耗时"+str(1000*(toc-tic))+"ms")
+print("结果保存完毕，耗时"+str(toc-tic)+"s")
 
 print("完成------------------------")
 
