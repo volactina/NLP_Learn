@@ -20,3 +20,5 @@ Day 2
 尝试通过以下方法在ubuntu上下载存在百度云里的数据集
 
 https://blog.csdn.net/feifanhanmc/article/details/82819425
+
+由于无法按博客指示的直接在chrome中搜索到BaiduExporter，因此直接下载插件并加入到chrome中
