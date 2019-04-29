@@ -22,3 +22,5 @@ Day 2
 https://blog.csdn.net/feifanhanmc/article/details/82819425
 
 由于无法按博客指示的直接在chrome中搜索到BaiduExporter，因此直接下载插件并加入到chrome中(注意要使用博客中指出的github上的baiduexporter项目上下载的最新版插件才能成功显示出能够导出aria2代码的按钮）
+
+最终上述方法未能成功，改为直接从本地上传文件至服务器，但是使用SCP命令依然无法成功（可能时因为windows下没有安装Openssh插件？），最后使用WinSCP工具成功上传。
