@@ -21,4 +21,4 @@ Day 2
 
 https://blog.csdn.net/feifanhanmc/article/details/82819425
 
-由于无法按博客指示的直接在chrome中搜索到BaiduExporter，因此直接下载插件并加入到chrome中
+由于无法按博客指示的直接在chrome中搜索到BaiduExporter，因此直接下载插件并加入到chrome中(注意要使用博客中指出的github上的baiduexporter项目上下载的最新版插件才能成功显示出能够导出aria2代码的按钮）
